@@ -1,0 +1,3 @@
+[submodule "portifolio-front"]
+	path = portifolio-front
+	url = git@github.com:Hudson-Farias/portifolio-front.git
