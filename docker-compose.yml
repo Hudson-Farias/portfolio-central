@@ -3,17 +3,19 @@ version: '3.8'
 services:
   app:
     build: 
-      context: ./portifolio-front
+      context: ./portfolio-front
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
     environment:
       - NODE_ENV=production
     restart: always
+    volumes:
+      - ./portfolio-icons-lib:/app/portfolio-icons-lib 
 
-  fastapi:
+  api:
     build:
-      context: ./portifolio-api
+      context: ./portfolio-api
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
