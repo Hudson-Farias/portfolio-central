@@ -11,6 +11,17 @@ services:
       - NODE_ENV=production
     restart: always
 
+
+  admin:
+    build:
+      context: ./portfolio-admin
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+    restart: always
+
   api:
     build:
       context: ./portfolio-api
