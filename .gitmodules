@@ -1,0 +1,6 @@
+[submodule "portfolio-front"]
+	path = portfolio-front
+	url = https://github.com/Hudson-Farias/portfolio-front.git
+[submodule "portfolio-api"]
+	path = portfolio-api
+	url = https://github.com/Hudson-Farias/portfolio-api.git
