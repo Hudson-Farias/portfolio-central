@@ -4,6 +4,3 @@
 [submodule "portifolio-api"]
 	path = portifolio-api
 	url = git@github.com:Hudson-Farias/portifolio-api.git
-[submodule "portfolio-icons-lib"]
-	path = portfolio-icons-lib
-	url = git@github.com:Hudson-Farias/portfolio-icons-lib.git
