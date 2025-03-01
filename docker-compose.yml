@@ -10,8 +10,6 @@ services:
     environment:
       - NODE_ENV=production
     restart: always
-    volumes:
-      - ./portfolio-icons-lib:/app/portfolio-icons-lib 
 
   api:
     build:
