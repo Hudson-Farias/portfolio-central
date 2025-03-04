@@ -5,6 +5,9 @@ services:
     build:
       context: ./portfolio-api
       dockerfile: Dockerfile
+    env_file:
+      - ./portfolio-api/.env
+      - ../.env
     ports:
       - "8000:8000"
     restart: always
