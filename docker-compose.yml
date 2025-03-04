@@ -1,6 +1,15 @@
 version: '3.8'
 
 services:
+  api:
+    build:
+      context: ./portfolio-api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    restart: always
+
+
   app:
     build: 
       context: ./portfolio-front
@@ -9,27 +18,4 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
-    depends_on:
-      - api
-    restart: always
-
-
-  admin:
-    build:
-      context: ./portfolio-admin
-      dockerfile: Dockerfile
-    ports:
-      - "3001:3001"
-    environment:
-      - NODE_ENV=production
-    depends_on:
-      - api
-    restart: always
-
-  api:
-    build:
-      context: ./portfolio-api
-      dockerfile: Dockerfile
-    ports:
-      - "8000:8000"
     restart: always
